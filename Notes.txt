@@ -1,0 +1,28 @@
+Road Map
+-why
+--> It makes easy to manage and build complex front-end 
+
+-when
+--> After mastering js, 
+
+- React is a library
+________________________________________________________
+- Topics to learn
+Core => state, UI manupulation, JSX
+Component Reusability
+Properties
+Hooks(useState,useEffect)
+________________________________________________________
+-Additional add-ons
+React-Router-dom
+State Management => Redux-toolkit or Context-API
+________________________________________________________
+class based components 
+-> for legacy code
+________________________________________________________
+BAAS Apps (Backend as a service) (appwrite firebase)
+-> social-media-app
+________________________________________________________
+After React
+-Backend or Next js
+________________________________________________________
