@@ -1,9 +1,8 @@
-
 import Increment from "./Increment";
 
-
 function App() {
-	return <Increment />;
-	
+	return <>
+		<Increment/>
+	</>;
 }
 export default App;

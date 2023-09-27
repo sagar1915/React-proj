@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Increment = () => {
-	let [increment, setIncrement] = useState(1);
-	let [counter, setCounter] = useState(0);
+	const [increment, setIncrement] = useState(1);
+	const [counter, setCounter] = useState(0);
 	function handleadd() {
 		if (counter < 100) {
 			setCounter(counter + Number(increment));
@@ -15,16 +15,26 @@ const Increment = () => {
 	}
 	return (
 		<>
-			<h2>counter value: {counter}</h2>
-			<input
-				type="number"
-				value={increment}
-				onChange={(e) => {
-					setIncrement(e.target.value);
-				}}
-			/>
-			<button onClick={handleadd}>Add value</button>
-			<button onClick={handleremove}>remove value</button>
+			<div className="flex-col bg-black text-white text-center p-5 m-2">
+				<h2>Counter value: {counter}</h2>
+				<input
+					className="bg-gray-500 p-2 m-2"
+					type="number"
+					value={increment}
+					onChange={(e) => {
+						setIncrement(e.target.value);
+					}}
+				/>
+				<button className="bg-gray-500 p-2 m-2 rounded-sm" onClick={handleadd}>
+					Add Value
+				</button>
+				<button
+					className="bg-gray-500 p-2 m-2 rounded-sm"
+					onClick={handleremove}
+				>
+					Remove Value
+				</button>
+			</div>
 		</>
 	);
 };
